@@ -1,10 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace NetCoreBestPractices.API.DTO
 {
-    public class CateegoryWithProductDto
+    public class CateegoryWithProductDto : CategoryDto
     {
-        public CateegoryWithProductDto()
-        {
-        }
+        public ICollection<ProductDto> Products { get; set; }
     }
 }

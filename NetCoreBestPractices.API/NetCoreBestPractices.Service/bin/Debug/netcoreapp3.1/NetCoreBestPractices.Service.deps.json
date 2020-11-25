@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "NetCoreBestPractices.Service/1.0.0": {
+        "dependencies": {
+          "NetCoreBestPractices.Core": "1.0.0"
+        },
+        "runtime": {
+          "NetCoreBestPractices.Service.dll": {}
+        }
+      },
+      "NetCoreBestPractices.Core/1.0.0": {
+        "runtime": {
+          "NetCoreBestPractices.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NetCoreBestPractices.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NetCoreBestPractices.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

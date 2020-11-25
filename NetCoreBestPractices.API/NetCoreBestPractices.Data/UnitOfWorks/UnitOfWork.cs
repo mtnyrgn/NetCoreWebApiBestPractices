@@ -1,10 +1,34 @@
 ﻿using System;
+using System.Threading.Tasks;
+using NetCoreBestPractices.Core.Repositories;
+using NetCoreBestPractices.Core.UnitOfWork;
+using NetCoreBestPractices.Data.Repositories;
+
 namespace NetCoreBestPractices.Data.UnitOfWorks
 {
-    public class UnitOfWorks
+    public class UnitOfWork: IUnitOfWork
     {
-        public UnitOfWorks()
+        private readonly AppDbContext _context;
+
+        private ProductRepository _productRepository;
+        private CategoryRepository _categoryRepository;
+
+        public UnitOfWork(AppDbContext appDbContext) 
         {
+            _context = appDbContext;
+        }
+
+        public IProductRepository Products => _productRepository = _productRepository ?? new ProductRepository(_context);
+        public ICategoryRepository Categories => _categoryRepository = _categoryRepository ?? new CategoryRepository(_context);
+
+        public void Commit()
+        {
+            _context.SaveChanges();
+        }
+
+        public async Task CommitAsync()
+        {
+            await _context.SaveChangesAsync();
         }
     }
 }

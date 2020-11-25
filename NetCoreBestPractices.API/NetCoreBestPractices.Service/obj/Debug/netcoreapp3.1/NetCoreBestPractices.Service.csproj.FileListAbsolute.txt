@@ -1,0 +1,12 @@
+/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Service/bin/Debug/netcoreapp3.1/NetCoreBestPractices.Service.deps.json
+/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Service/bin/Debug/netcoreapp3.1/NetCoreBestPractices.Service.dll
+/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Service/bin/Debug/netcoreapp3.1/NetCoreBestPractices.Service.pdb
+/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Service/bin/Debug/netcoreapp3.1/NetCoreBestPractices.Core.dll
+/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Service/bin/Debug/netcoreapp3.1/NetCoreBestPractices.Core.pdb
+/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Service/obj/Debug/netcoreapp3.1/NetCoreBestPractices.Service.csprojAssemblyReference.cache
+/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Service/obj/Debug/netcoreapp3.1/NetCoreBestPractices.Service.AssemblyInfoInputs.cache
+/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Service/obj/Debug/netcoreapp3.1/NetCoreBestPractices.Service.AssemblyInfo.cs
+/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Service/obj/Debug/netcoreapp3.1/NetCoreBestPractices.Service.csproj.CoreCompileInputs.cache
+/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Service/obj/Debug/netcoreapp3.1/NetCoreBestPractices.Service.csproj.CopyComplete
+/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Service/obj/Debug/netcoreapp3.1/NetCoreBestPractices.Service.dll
+/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Service/obj/Debug/netcoreapp3.1/NetCoreBestPractices.Service.pdb

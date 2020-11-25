@@ -25,6 +25,84 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Data/NetCoreBestPractices.Data.csproj": {
+                "projectPath": "/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Data/NetCoreBestPractices.Data.csproj"
+              },
+              "/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Service/NetCoreBestPractices.Service.csproj": {
+                "projectPath": "/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Service/NetCoreBestPractices.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Core/NetCoreBestPractices.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Core/NetCoreBestPractices.Core.csproj",
+        "projectName": "NetCoreBestPractices.Core",
+        "projectPath": "/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Core/NetCoreBestPractices.Core.csproj",
+        "packagesPath": "/Users/metin/.nuget/packages/",
+        "outputPath": "/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/metin/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -48,9 +126,130 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Data/NetCoreBestPractices.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Data/NetCoreBestPractices.Data.csproj",
+        "projectName": "NetCoreBestPractices.Data",
+        "projectPath": "/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Data/NetCoreBestPractices.Data.csproj",
+        "packagesPath": "/Users/metin/.nuget/packages/",
+        "outputPath": "/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Data/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/metin/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Core/NetCoreBestPractices.Core.csproj": {
+                "projectPath": "/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Core/NetCoreBestPractices.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.10, )"
             },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Service/NetCoreBestPractices.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Service/NetCoreBestPractices.Service.csproj",
+        "projectName": "NetCoreBestPractices.Service",
+        "projectPath": "/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Service/NetCoreBestPractices.Service.csproj",
+        "packagesPath": "/Users/metin/.nuget/packages/",
+        "outputPath": "/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Service/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/metin/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Core/NetCoreBestPractices.Core.csproj": {
+                "projectPath": "/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Core/NetCoreBestPractices.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

@@ -1,0 +1,15 @@
+/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Data/bin/Debug/netcoreapp3.1/NetCoreBestPractices.Data.deps.json
+/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Data/bin/Debug/netcoreapp3.1/NetCoreBestPractices.Data.runtimeconfig.json
+/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Data/bin/Debug/netcoreapp3.1/NetCoreBestPractices.Data.runtimeconfig.dev.json
+/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Data/bin/Debug/netcoreapp3.1/NetCoreBestPractices.Data.dll
+/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Data/bin/Debug/netcoreapp3.1/NetCoreBestPractices.Data.pdb
+/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Data/bin/Debug/netcoreapp3.1/NetCoreBestPractices.Core.dll
+/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Data/bin/Debug/netcoreapp3.1/NetCoreBestPractices.Core.pdb
+/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Data/obj/Debug/netcoreapp3.1/NetCoreBestPractices.Data.csprojAssemblyReference.cache
+/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Data/obj/Debug/netcoreapp3.1/NetCoreBestPractices.Data.AssemblyInfoInputs.cache
+/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Data/obj/Debug/netcoreapp3.1/NetCoreBestPractices.Data.AssemblyInfo.cs
+/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Data/obj/Debug/netcoreapp3.1/NetCoreBestPractices.Data.csproj.CoreCompileInputs.cache
+/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Data/obj/Debug/netcoreapp3.1/NetCoreBestPractices.Data.csproj.CopyComplete
+/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Data/obj/Debug/netcoreapp3.1/NetCoreBestPractices.Data.dll
+/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Data/obj/Debug/netcoreapp3.1/NetCoreBestPractices.Data.pdb
+/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Data/obj/Debug/netcoreapp3.1/NetCoreBestPractices.Data.genruntimeconfig.cache
