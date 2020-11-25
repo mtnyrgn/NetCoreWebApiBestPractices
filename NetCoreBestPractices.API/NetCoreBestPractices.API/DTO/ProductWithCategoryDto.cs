@@ -1,10 +1,8 @@
 ﻿using System;
 namespace NetCoreBestPractices.API.DTO
 {
-    public class ProductWithCategoryDto
+    public class ProductWithCategoryDto : ProductDto
     {
-        public ProductWithCategoryDto()
-        {
-        }
+        public CategoryDto Category { get; set; }
     }
 }
