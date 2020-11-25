@@ -7,6 +7,6 @@ namespace NetCoreBestPractices.Core.Services
     public interface IProductService : IService<Product>
     {
         //bool ControlInnerBarcode(Product product)
-        Task<Product> GetWithCategoryByIdAsnc(long productId);
+        Task<Product> GetWithCategoryByIdAsync(long productId);
     }
 }

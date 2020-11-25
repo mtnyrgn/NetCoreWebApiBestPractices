@@ -13,7 +13,7 @@ namespace NetCoreBestPractices.Service.Services
     {
         public ProductService(IUnitOfWork unitOfWork,IRepository<Product> repository) : base(unitOfWork, repository) { }
 
-        public async Task<Product> GetWithCategoryByIdAsnc(long productId)
+        public async Task<Product> GetWithCategoryByIdAsync(long productId)
         {
             return await _unitOfWork.Products.GetWithCategoryByIdAsnc(productId);
         }
