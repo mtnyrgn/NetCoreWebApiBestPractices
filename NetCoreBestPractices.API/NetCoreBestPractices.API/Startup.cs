@@ -21,7 +21,6 @@ using NetCoreBestPractices.Data.Repositories;
 using NetCoreBestPractices.Data.UnitOfWorks;
 using NetCoreBestPractices.Service.Services;
 using NetCoreBestPractices.API.Extensions;
-using NetCoreBestPractices.API.ApiService;
 
 namespace NetCoreBestPractices.API
 {
