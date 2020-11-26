@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using NetCoreBestPractices.API.ApiService;
 using NetCoreBestPractices.API.DTO;
 using NetCoreBestPractices.API.Filters;
 using NetCoreBestPractices.Core;
@@ -21,9 +20,8 @@ namespace NetCoreBestPractices.API.Controllers
     {
         private readonly IProductService _productService;
         private readonly IMapper _mapper;
-        private readonly PersonelService _personelServis;
 
-        public ProductController(IProductService productService, IMapper mapper, PersonelService personelServis)
+        public ProductController(IProductService productService, IMapper mapper)
         {
             _productService = productService;
             _mapper = mapper;
