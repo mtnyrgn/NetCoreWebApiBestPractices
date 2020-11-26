@@ -4,7 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using NetCoreBestPractices.API.ApiService;
 using NetCoreBestPractices.API.DTO;
+using NetCoreBestPractices.API.Filters;
 using NetCoreBestPractices.Core;
 using NetCoreBestPractices.Core.Models;
 using NetCoreBestPractices.Core.Services;
@@ -19,8 +21,9 @@ namespace NetCoreBestPractices.API.Controllers
     {
         private readonly IProductService _productService;
         private readonly IMapper _mapper;
+        private readonly PersonelService _personelServis;
 
-        public ProductController(IProductService productService, IMapper mapper)
+        public ProductController(IProductService productService, IMapper mapper, PersonelService personelServis)
         {
             _productService = productService;
             _mapper = mapper;
@@ -30,10 +33,13 @@ namespace NetCoreBestPractices.API.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
+            //throw new Exception("Tüm dataları çekerken hata meydana geldi"); //Global oarak yazılan exception handlerın bunu yakalaması ve kendi error dto modelimize uygun geri dönüş yaptı.
             var products = await _productService.GetAllAsync();
 
             return Ok(_mapper.Map<IEnumerable<ProductDto>>(products));
         }
+
+        [ServiceFilter(typeof(NotFoundFilter))]//NotFoundFilter DI objesi aldığı için service filter olarak tanımlandı.
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(long id)
         {
@@ -42,6 +48,7 @@ namespace NetCoreBestPractices.API.Controllers
             return Ok(_mapper.Map<ProductDto>(product));
         }
 
+        [ValidationFilter]
         [HttpPost]
         public async Task<IActionResult> Save(ProductDto product)
         {
@@ -58,6 +65,7 @@ namespace NetCoreBestPractices.API.Controllers
             return NoContent();//204 dönecek. Update işlerinden sonra herhangi bir obje dönmemeliyiz. Aksi takdirde client-server arası data trafiği artmış olacak.
         }
 
+        [ServiceFilter(typeof(NotFoundFilter))] //NotFoundFilter DI objesi aldığı için service filter olarak tanımlandı.
         [HttpDelete("{id}")]
         public IActionResult Remove(long id)
         {
@@ -68,6 +76,7 @@ namespace NetCoreBestPractices.API.Controllers
             return NoContent();
         }
 
+        [ServiceFilter(typeof(NotFoundFilter))]//NotFoundFilter DI objesi aldığı için service filter olarak tanımlandı.
         [HttpGet("{id}/category")]
         public async Task<IActionResult> GetWithCategoryById(int id)
         {
