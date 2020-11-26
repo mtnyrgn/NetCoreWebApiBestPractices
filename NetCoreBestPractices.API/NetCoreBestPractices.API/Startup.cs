@@ -12,6 +12,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 using NetCoreBestPractices.Core;
 using NetCoreBestPractices.Core.Repositories;
 using NetCoreBestPractices.Core.Services;
@@ -48,9 +49,19 @@ namespace NetCoreBestPractices.API
             services.AddScoped<IUnitOfWork, UnitOfWork>(); //Requestte IUnitOfWork gördüğünde bir UnitOfWork objesi oluşturacak. Transient yazarsak her IUnitOfWork için bir obje yaratır.
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped(typeof(IService<>), typeof(Service.Services.Service<>));
-            services.AddScoped<ICategoryService,CategoryService>();
+            services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("TestApi", new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "Test API",
+                    Description = "A best practices example of .NET Core API"
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -71,6 +82,12 @@ namespace NetCoreBestPractices.API
             {
                 endpoints.MapControllers();
             });
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/TestApi/swagger.json", "Test API"); //Swaggerın kullanacağı json dosyasının yerini belirledik.
+            });
+
         }
     }
 }
