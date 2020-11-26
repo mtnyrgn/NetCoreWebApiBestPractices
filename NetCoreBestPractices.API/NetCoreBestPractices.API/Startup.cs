@@ -5,14 +5,13 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using NetCoreBestPractices.API.Filters;
 using NetCoreBestPractices.Core;
 using NetCoreBestPractices.Core.Repositories;
 using NetCoreBestPractices.Core.Services;
@@ -21,6 +20,9 @@ using NetCoreBestPractices.Data;
 using NetCoreBestPractices.Data.Repositories;
 using NetCoreBestPractices.Data.UnitOfWorks;
 using NetCoreBestPractices.Service.Services;
+using NetCoreBestPractices.API.Extensions;
+using NetCoreBestPractices.API.ApiService;
+
 namespace NetCoreBestPractices.API
 {
     public class Startup
@@ -36,6 +38,12 @@ namespace NetCoreBestPractices.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            //services.AddControllers(options =>
+            //{
+            //    options.Filters.Add(new ValidationFilter());
+            //}) //Controller seviyesinde herhangi bir tanımlama yapmadan validation filterı merkezileştirdim. İSter endpointe,ister controllera, ister global olarak filter yazabiliriz.
+
             services.AddAutoMapper(typeof(Startup));
 
             services.AddDbContext<AppDbContext>(options =>
@@ -46,6 +54,7 @@ namespace NetCoreBestPractices.API
                 });
             });
 
+            services.AddScoped<NotFoundFilter>();
             services.AddScoped<IUnitOfWork, UnitOfWork>(); //Requestte IUnitOfWork gördüğünde bir UnitOfWork objesi oluşturacak. Transient yazarsak her IUnitOfWork için bir obje yaratır.
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped(typeof(IService<>), typeof(Service.Services.Service<>));
@@ -62,6 +71,11 @@ namespace NetCoreBestPractices.API
                     Description = "A best practices example of .NET Core API"
                 });
             });
+
+            services.Configure<ApiBehaviorOptions>(options =>
+           {
+               options.SuppressModelStateInvalidFilter = true; //ModelState filterımı kendim kontrol edeceğimi projeye söyledim.Net Core kendi kontrolünü bırakacak.
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -75,6 +89,8 @@ namespace NetCoreBestPractices.API
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCustomExceptionHandler(); // Kendi yazddığımız CustomExceptionHandler içerisindeki UseExceptionHandler methodunu net core'a tanımladık.
 
             app.UseAuthorization();
 
