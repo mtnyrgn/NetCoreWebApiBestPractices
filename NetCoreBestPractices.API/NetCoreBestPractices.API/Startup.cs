@@ -21,6 +21,10 @@ using NetCoreBestPractices.Data.Repositories;
 using NetCoreBestPractices.Data.UnitOfWorks;
 using NetCoreBestPractices.Service.Services;
 using NetCoreBestPractices.API.Extensions;
+using NetCoreBestPractices.API.Settings;
+using NetCoreBestPractices.Core.Settings;
+using Microsoft.Extensions.Options;
+using MongoDB.Driver;
 
 namespace NetCoreBestPractices.API
 {
@@ -41,7 +45,7 @@ namespace NetCoreBestPractices.API
             //services.AddControllers(options =>
             //{
             //    options.Filters.Add(new ValidationFilter());
-            //}) //Controller seviyesinde herhangi bir tanımlama yapmadan validation filterı merkezileştirdim. İSter endpointe,ister controllera, ister global olarak filter yazabiliriz.
+            //}); //Controller seviyesinde herhangi bir tanımlama yapmadan validation filterı merkezileştirdim. İSter endpointe,ister controllera, ister global olarak filter yazabiliriz.
 
             services.AddAutoMapper(typeof(Startup));
 
@@ -57,9 +61,15 @@ namespace NetCoreBestPractices.API
             services.AddScoped<IUnitOfWork, UnitOfWork>(); //Requestte IUnitOfWork gördüğünde bir UnitOfWork objesi oluşturacak. Transient yazarsak her IUnitOfWork için bir obje yaratır.
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped(typeof(IService<>), typeof(Service.Services.Service<>));
+            services.AddScoped(typeof(IMongoService<>), typeof(MongoService<>));
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped(typeof(IMongoRepository<>), typeof(MongoRepository<>));
+
+            services.Configure<MongoDbSettings>(Configuration.GetSection("ConnectionStrings:MongoDbSettings"));
+            services.AddSingleton<IMongoDbSettings>( serviceProvider => serviceProvider.GetRequiredService<IOptions<MongoDbSettings>>().Value); //Bir üst satırda appsetingsten alınan ayarlar burada inject edildi.
+
 
             services.AddSwaggerGen(c =>
             {
