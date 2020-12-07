@@ -10,3 +10,14 @@
 /Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Service/obj/Debug/netcoreapp3.1/NetCoreBestPractices.Service.csproj.CopyComplete
 /Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Service/obj/Debug/netcoreapp3.1/NetCoreBestPractices.Service.dll
 /Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Service/obj/Debug/netcoreapp3.1/NetCoreBestPractices.Service.pdb
+C:\Users\myorgun\Desktop\MetinGithub\NetCoreWebApiBestPractices\NetCoreBestPractices.API\NetCoreBestPractices.Service\bin\Debug\netcoreapp3.1\NetCoreBestPractices.Service.deps.json
+C:\Users\myorgun\Desktop\MetinGithub\NetCoreWebApiBestPractices\NetCoreBestPractices.API\NetCoreBestPractices.Service\bin\Debug\netcoreapp3.1\NetCoreBestPractices.Service.dll
+C:\Users\myorgun\Desktop\MetinGithub\NetCoreWebApiBestPractices\NetCoreBestPractices.API\NetCoreBestPractices.Service\bin\Debug\netcoreapp3.1\NetCoreBestPractices.Service.pdb
+C:\Users\myorgun\Desktop\MetinGithub\NetCoreWebApiBestPractices\NetCoreBestPractices.API\NetCoreBestPractices.Service\bin\Debug\netcoreapp3.1\NetCoreBestPractices.Core.dll
+C:\Users\myorgun\Desktop\MetinGithub\NetCoreWebApiBestPractices\NetCoreBestPractices.API\NetCoreBestPractices.Service\bin\Debug\netcoreapp3.1\NetCoreBestPractices.Core.pdb
+C:\Users\myorgun\Desktop\MetinGithub\NetCoreWebApiBestPractices\NetCoreBestPractices.API\NetCoreBestPractices.Service\obj\Debug\netcoreapp3.1\NetCoreBestPractices.Service.csprojAssemblyReference.cache
+C:\Users\myorgun\Desktop\MetinGithub\NetCoreWebApiBestPractices\NetCoreBestPractices.API\NetCoreBestPractices.Service\obj\Debug\netcoreapp3.1\NetCoreBestPractices.Service.AssemblyInfoInputs.cache
+C:\Users\myorgun\Desktop\MetinGithub\NetCoreWebApiBestPractices\NetCoreBestPractices.API\NetCoreBestPractices.Service\obj\Debug\netcoreapp3.1\NetCoreBestPractices.Service.AssemblyInfo.cs
+C:\Users\myorgun\Desktop\MetinGithub\NetCoreWebApiBestPractices\NetCoreBestPractices.API\NetCoreBestPractices.Service\obj\Debug\netcoreapp3.1\NetCoreBestPractices.Service.csproj.CopyComplete
+C:\Users\myorgun\Desktop\MetinGithub\NetCoreWebApiBestPractices\NetCoreBestPractices.API\NetCoreBestPractices.Service\obj\Debug\netcoreapp3.1\NetCoreBestPractices.Service.dll
+C:\Users\myorgun\Desktop\MetinGithub\NetCoreWebApiBestPractices\NetCoreBestPractices.API\NetCoreBestPractices.Service\obj\Debug\netcoreapp3.1\NetCoreBestPractices.Service.pdb

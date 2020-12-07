@@ -10,6 +10,10 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NetCoreBestPractices.Core\NetCoreBestPractices.Core.csproj" />
@@ -17,7 +21,6 @@
   <ItemGroup>
     <Folder Include="Configurations\" />
     <Folder Include="Seeds\" />
-    <Folder Include="Repositories\" />
     <Folder Include="UnitOfWorks\" />
   </ItemGroup>
 </Project>

@@ -6,3 +6,11 @@
 /Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Logging/obj/Debug/netcoreapp3.1/NetCoreBestPractices.Logging.csproj.CoreCompileInputs.cache
 /Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Logging/obj/Debug/netcoreapp3.1/NetCoreBestPractices.Logging.dll
 /Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Logging/obj/Debug/netcoreapp3.1/NetCoreBestPractices.Logging.pdb
+C:\Users\myorgun\Desktop\MetinGithub\NetCoreWebApiBestPractices\NetCoreBestPractices.API\NetCoreBestPractices.Logging\bin\Debug\netcoreapp3.1\NetCoreBestPractices.Logging.deps.json
+C:\Users\myorgun\Desktop\MetinGithub\NetCoreWebApiBestPractices\NetCoreBestPractices.API\NetCoreBestPractices.Logging\bin\Debug\netcoreapp3.1\NetCoreBestPractices.Logging.dll
+C:\Users\myorgun\Desktop\MetinGithub\NetCoreWebApiBestPractices\NetCoreBestPractices.API\NetCoreBestPractices.Logging\bin\Debug\netcoreapp3.1\NetCoreBestPractices.Logging.pdb
+C:\Users\myorgun\Desktop\MetinGithub\NetCoreWebApiBestPractices\NetCoreBestPractices.API\NetCoreBestPractices.Logging\obj\Debug\netcoreapp3.1\NetCoreBestPractices.Logging.AssemblyInfoInputs.cache
+C:\Users\myorgun\Desktop\MetinGithub\NetCoreWebApiBestPractices\NetCoreBestPractices.API\NetCoreBestPractices.Logging\obj\Debug\netcoreapp3.1\NetCoreBestPractices.Logging.AssemblyInfo.cs
+C:\Users\myorgun\Desktop\MetinGithub\NetCoreWebApiBestPractices\NetCoreBestPractices.API\NetCoreBestPractices.Logging\obj\Debug\netcoreapp3.1\NetCoreBestPractices.Logging.dll
+C:\Users\myorgun\Desktop\MetinGithub\NetCoreWebApiBestPractices\NetCoreBestPractices.API\NetCoreBestPractices.Logging\obj\Debug\netcoreapp3.1\NetCoreBestPractices.Logging.pdb
+C:\Users\myorgun\Desktop\MetinGithub\NetCoreWebApiBestPractices\NetCoreBestPractices.API\NetCoreBestPractices.Logging\obj\Debug\netcoreapp3.1\NetCoreBestPractices.Logging.csprojAssemblyReference.cache

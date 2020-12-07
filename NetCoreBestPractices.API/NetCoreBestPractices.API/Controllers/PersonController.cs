@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc;
 using NetCoreBestPractices.API.DTO.Person;
 using NetCoreBestPractices.API.Filters;
 using NetCoreBestPractices.Core.Documents;
-using NetCoreBestPractices.Core.Repositories;
 using NetCoreBestPractices.Core.Services;
 
 namespace NetCoreBestPractices.API.Controllers

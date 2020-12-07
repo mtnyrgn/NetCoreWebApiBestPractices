@@ -1,30 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Service/NetCoreBestPractices.Service.csproj": {}
+    "C:\\Users\\myorgun\\Desktop\\MetinGithub\\NetCoreWebApiBestPractices\\NetCoreBestPractices.API\\NetCoreBestPractices.Service\\NetCoreBestPractices.Service.csproj": {}
   },
   "projects": {
-    "/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Core/NetCoreBestPractices.Core.csproj": {
+    "C:\\Users\\myorgun\\Desktop\\MetinGithub\\NetCoreWebApiBestPractices\\NetCoreBestPractices.API\\NetCoreBestPractices.Core\\NetCoreBestPractices.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Core/NetCoreBestPractices.Core.csproj",
+        "projectUniqueName": "C:\\Users\\myorgun\\Desktop\\MetinGithub\\NetCoreWebApiBestPractices\\NetCoreBestPractices.API\\NetCoreBestPractices.Core\\NetCoreBestPractices.Core.csproj",
         "projectName": "NetCoreBestPractices.Core",
-        "projectPath": "/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Core/NetCoreBestPractices.Core.csproj",
-        "packagesPath": "/Users/metin/.nuget/packages/",
-        "outputPath": "/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Core/obj/",
+        "projectPath": "C:\\Users\\myorgun\\Desktop\\MetinGithub\\NetCoreWebApiBestPractices\\NetCoreBestPractices.API\\NetCoreBestPractices.Core\\NetCoreBestPractices.Core.csproj",
+        "packagesPath": "C:\\Users\\myorgun\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\myorgun\\Desktop\\MetinGithub\\NetCoreWebApiBestPractices\\NetCoreBestPractices.API\\NetCoreBestPractices.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/metin/.config/NuGet/NuGet.Config"
+          "C:\\Users\\myorgun\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/nuget": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -36,7 +38,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.11.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -52,34 +59,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Service/NetCoreBestPractices.Service.csproj": {
+    "C:\\Users\\myorgun\\Desktop\\MetinGithub\\NetCoreWebApiBestPractices\\NetCoreBestPractices.API\\NetCoreBestPractices.Service\\NetCoreBestPractices.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Service/NetCoreBestPractices.Service.csproj",
+        "projectUniqueName": "C:\\Users\\myorgun\\Desktop\\MetinGithub\\NetCoreWebApiBestPractices\\NetCoreBestPractices.API\\NetCoreBestPractices.Service\\NetCoreBestPractices.Service.csproj",
         "projectName": "NetCoreBestPractices.Service",
-        "projectPath": "/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Service/NetCoreBestPractices.Service.csproj",
-        "packagesPath": "/Users/metin/.nuget/packages/",
-        "outputPath": "/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Service/obj/",
+        "projectPath": "C:\\Users\\myorgun\\Desktop\\MetinGithub\\NetCoreWebApiBestPractices\\NetCoreBestPractices.API\\NetCoreBestPractices.Service\\NetCoreBestPractices.Service.csproj",
+        "packagesPath": "C:\\Users\\myorgun\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\myorgun\\Desktop\\MetinGithub\\NetCoreWebApiBestPractices\\NetCoreBestPractices.API\\NetCoreBestPractices.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/metin/.config/NuGet/NuGet.Config"
+          "C:\\Users\\myorgun\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/nuget": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Core/NetCoreBestPractices.Core.csproj": {
-                "projectPath": "/Users/metin/Desktop/github-mtnyrgn/NetCoreWebApiBestPractices/NetCoreBestPractices.API/NetCoreBestPractices.Core/NetCoreBestPractices.Core.csproj"
+              "C:\\Users\\myorgun\\Desktop\\MetinGithub\\NetCoreWebApiBestPractices\\NetCoreBestPractices.API\\NetCoreBestPractices.Core\\NetCoreBestPractices.Core.csproj": {
+                "projectPath": "C:\\Users\\myorgun\\Desktop\\MetinGithub\\NetCoreWebApiBestPractices\\NetCoreBestPractices.API\\NetCoreBestPractices.Core\\NetCoreBestPractices.Core.csproj"
               }
             }
           }
@@ -92,7 +101,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -108,7 +116,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

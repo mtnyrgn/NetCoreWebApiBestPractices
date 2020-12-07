@@ -32,7 +32,7 @@ namespace NetCoreBestPractices.API.Controllers
         public async Task<IActionResult> GetAll()
         {
             //throw new Exception("Tüm dataları çekerken hata meydana geldi"); //Global oarak yazılan exception handlerın bunu yakalaması ve kendi error dto modelimize uygun geri dönüş yaptı.
-            var products = await _productService.GetAllAsync();
+            var products = await _productService.GetAllAsync(); 
 
             return Ok(_mapper.Map<IEnumerable<ProductDto>>(products));
         }
@@ -76,7 +76,7 @@ namespace NetCoreBestPractices.API.Controllers
 
         [ServiceFilter(typeof(NotFoundFilter))]//NotFoundFilter DI objesi aldığı için service filter olarak tanımlandı.
         [HttpGet("{id}/category")]
-        public async Task<IActionResult> GetWithCategoryById(int id)
+        public async Task<IActionResult> GetWithCategoryById(long id)
         {
             var product = await _productService.GetWithCategoryByIdAsync(id);
 
