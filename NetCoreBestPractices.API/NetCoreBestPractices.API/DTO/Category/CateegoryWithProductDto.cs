@@ -1,7 +1,8 @@
-﻿using System;
+﻿using NetCoreBestPractices.API.DTO.Product;
+using System;
 using System.Collections.Generic;
 
-namespace NetCoreBestPractices.API.DTO
+namespace NetCoreBestPractices.API.DTO.Category
 {
     public class CateegoryWithProductDto : CategoryDto
     {

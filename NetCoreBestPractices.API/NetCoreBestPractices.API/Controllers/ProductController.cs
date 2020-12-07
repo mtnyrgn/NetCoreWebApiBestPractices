@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using NetCoreBestPractices.API.DTO;
+using NetCoreBestPractices.API.DTO.Product;
 using NetCoreBestPractices.API.Filters;
 using NetCoreBestPractices.Core;
 using NetCoreBestPractices.Core.Models;

@@ -1,7 +1,8 @@
 ﻿using System;
 using AutoMapper;
-using NetCoreBestPractices.API.DTO;
+using NetCoreBestPractices.API.DTO.Category;
 using NetCoreBestPractices.API.DTO.Person;
+using NetCoreBestPractices.API.DTO.Product;
 using NetCoreBestPractices.Core.Documents;
 using NetCoreBestPractices.Core.Models;
 

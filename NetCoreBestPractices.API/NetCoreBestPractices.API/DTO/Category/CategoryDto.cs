@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace NetCoreBestPractices.API.DTO
+namespace NetCoreBestPractices.API.DTO.Category
 {
     public class CategoryDto
     {

@@ -4,8 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using NetCoreBestPractices.API.DTO;
-using NetCoreBestPractices.Core;
+using NetCoreBestPractices.API.DTO.Category;
 using NetCoreBestPractices.Core.Models;
 using NetCoreBestPractices.Core.Services;
 
