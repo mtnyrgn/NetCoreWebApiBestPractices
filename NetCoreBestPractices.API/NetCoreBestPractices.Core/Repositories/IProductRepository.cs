@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
-using NetCoreBestPractices.Core.Models;
+using NetCoreBestPractices.Core.Entities;
 
 namespace NetCoreBestPractices.Core.Repositories
 {

@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using NetCoreBestPractices.Core.Models;
+using NetCoreBestPractices.Core.Entities;
 
 namespace NetCoreBestPractices.Data.Configurations
 {

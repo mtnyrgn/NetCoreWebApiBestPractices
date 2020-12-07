@@ -4,7 +4,7 @@ using NetCoreBestPractices.API.DTO.Category;
 using NetCoreBestPractices.API.DTO.Person;
 using NetCoreBestPractices.API.DTO.Product;
 using NetCoreBestPractices.Core.Documents;
-using NetCoreBestPractices.Core.Models;
+using NetCoreBestPractices.Core.Entities;
 
 namespace NetCoreBestPractices.API.Mapping
 {

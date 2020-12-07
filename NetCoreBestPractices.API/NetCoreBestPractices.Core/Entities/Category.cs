@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace NetCoreBestPractices.Core.Models
+namespace NetCoreBestPractices.Core.Entities
 {
     public class Category
     {

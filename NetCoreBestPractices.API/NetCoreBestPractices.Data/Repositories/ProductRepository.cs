@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using NetCoreBestPractices.Core.Models;
+using NetCoreBestPractices.Core.Entities;
 using NetCoreBestPractices.Core.Repositories;
 
 namespace NetCoreBestPractices.Data.Repositories

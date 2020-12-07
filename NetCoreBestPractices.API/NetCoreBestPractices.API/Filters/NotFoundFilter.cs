@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc.Filters;
 using NetCoreBestPractices.API.DTO.Error;
 using NetCoreBestPractices.Core;
-using NetCoreBestPractices.Core.Models;
+using NetCoreBestPractices.Core.Entities;
 using NetCoreBestPractices.Core.Services;
 using System;
 using System.Collections.Generic;

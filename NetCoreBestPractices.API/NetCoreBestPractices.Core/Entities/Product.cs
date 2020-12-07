@@ -1,5 +1,5 @@
 ﻿using System;
-namespace NetCoreBestPractices.Core.Models
+namespace NetCoreBestPractices.Core.Entities
 {
     public class Product
     {

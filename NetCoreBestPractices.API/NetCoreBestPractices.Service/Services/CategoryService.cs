@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
-using NetCoreBestPractices.Core.Models;
+using NetCoreBestPractices.Core.Entities;
 using NetCoreBestPractices.Core.Repositories;
 using NetCoreBestPractices.Core.Services;
 using NetCoreBestPractices.Core.UnitOfWork;

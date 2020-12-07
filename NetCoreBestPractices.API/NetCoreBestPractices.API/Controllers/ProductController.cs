@@ -8,7 +8,7 @@ using NetCoreBestPractices.API.DTO;
 using NetCoreBestPractices.API.DTO.Product;
 using NetCoreBestPractices.API.Filters;
 using NetCoreBestPractices.Core;
-using NetCoreBestPractices.Core.Models;
+using NetCoreBestPractices.Core.Entities;
 using NetCoreBestPractices.Core.Services;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
