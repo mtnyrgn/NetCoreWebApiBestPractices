@@ -11,6 +11,8 @@ using NetCoreBestPractices.Core.Services;
 
 namespace NetCoreBestPractices.API.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class PersonController : Controller
     {
         private readonly IMongoService<Person> _personService;
@@ -20,11 +22,7 @@ namespace NetCoreBestPractices.API.Controllers
             _personService = personService;
             _mapper = mapper;
         }
-        public IActionResult Index()
-        {
-            return View();
-        }
-        // GET: /<controller>/
+        //GET: /<controller>/
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -33,8 +31,7 @@ namespace NetCoreBestPractices.API.Controllers
 
             return Ok(_mapper.Map<IEnumerable<PersonDto>>(persons));
         }
-
-        [ServiceFilter(typeof(NotFoundFilter))]//NotFoundFilter DI objesi aldığı için service filter olarak tanımlandı.
+        //Get: /person/1
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(string id)
         {
@@ -43,7 +40,6 @@ namespace NetCoreBestPractices.API.Controllers
             return Ok(_mapper.Map<PersonDto>(person));
         }
 
-        [ValidationFilter]
         [HttpPost]
         public async Task<IActionResult> Save(PersonDto person)
         {
@@ -53,14 +49,22 @@ namespace NetCoreBestPractices.API.Controllers
         }
 
         [HttpPut]
-        public IActionResult Update(PersonDto person)
+        public async Task<IActionResult> Update(string id,PersonDto person)
         {
-            var updatedPerson = _personService.Update(_mapper.Map<Person>(person));
+            var updatedPerson = await _personService.GetByIdAsync(id);
+            
+            if(!(person is null))
+            {
+                updatedPerson.Name = person.Name;
+                updatedPerson.Surname = person.Surname;
+                _personService.Update(updatedPerson);
 
-            return NoContent();//204 dönecek. Update işlerinden sonra herhangi bir obje dönmemeliyiz. Aksi takdirde client-server arası data trafiği artmış olacak.
+                return NoContent();//204 dönecek. Update işlerinden sonra herhangi bir obje dönmemeliyiz. Aksi takdirde client-server arası data trafiği artmış olacak.
+            }
+
+            return BadRequest();
         }
 
-        [ServiceFilter(typeof(NotFoundFilter))] //NotFoundFilter DI objesi aldığı için service filter olarak tanımlandı.
         [HttpDelete("{id}")]
         public IActionResult Remove(string id)
         {
