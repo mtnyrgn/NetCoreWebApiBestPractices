@@ -3,14 +3,15 @@
 What's included
 
 .NET Core Web Api Template#v1.0.0
-├── NetCoreWebApiBestPractices/         #Solution
-│   ├── SolutionItems/  #Items like Nuget.Config, .gitignore
-│   ├── API/            #API
-│   ├── Core/  #Core
-│   ├── Data/           #Data
-│   ├── Service/           #Service
-│   └── Test/        #Test
-└── 
+<p>│ NetCoreWebApiBestPractices/         #Solution</p>
+<p>│   ├── SolutionItems/  #Items like Nuget.Config, .gitignore</p>
+<p>│   ├── API/.    #API</p>
+<p>│   ├── Core/.   #Core</p>
+<p>│   ├── Data/.   #Data</p>
+<p>│   ├── Service/.   #Service</p>
+<p>│   └── Test/.  #Test</p>
+<p>│────────────────────────</p>
+
 Starting
 
 This project is created with layered architecture. The layer order is Core -> Data -> Service -> API
