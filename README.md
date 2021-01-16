@@ -1,4 +1,4 @@
-# NetCoreWebApiBestPractices# NetCoreWebApiBestPractices
+# .NET Core Web Api Template 
 
 What's included
 
