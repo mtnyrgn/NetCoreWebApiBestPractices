@@ -19,5 +19,10 @@ namespace NetCoreBestPractices.Data.Repositories
         {
             return await _appDbContext.Categories.Include(x => x.Products).SingleOrDefaultAsync(s => s.Id == categoryId);
         }
+
+       public async Task<Category> GetCategoryById(long categoryId)
+        {
+            return await _appDbContext.Categories.Where(s => s.Id == categoryId).FirstOrDefault();
+        }
     }
 }
