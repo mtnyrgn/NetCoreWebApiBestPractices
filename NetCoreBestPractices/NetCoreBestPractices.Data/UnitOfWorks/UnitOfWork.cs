@@ -12,6 +12,7 @@ namespace NetCoreBestPractices.Data.UnitOfWorks
 
         private ProductRepository _productRepository;
         private CategoryRepository _categoryRepository;
+        private BookRepository _bookRepository;
 
         public UnitOfWork(AppDbContext appDbContext) 
         {
@@ -20,6 +21,7 @@ namespace NetCoreBestPractices.Data.UnitOfWorks
 
         public IProductRepository Products => _productRepository = _productRepository ?? new ProductRepository(_context);
         public ICategoryRepository Categories => _categoryRepository = _categoryRepository ?? new CategoryRepository(_context);
+        public IBookRepository Books => _bookRepository = _bookRepository ?? new BookRepository(_context);
 
         public void Commit()
         {

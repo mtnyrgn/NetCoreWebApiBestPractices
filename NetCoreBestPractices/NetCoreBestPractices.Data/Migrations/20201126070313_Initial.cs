@@ -44,6 +44,23 @@ namespace NetCoreBestPractices.Data.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "Books",
+                columns: table => new
+                {
+                    Id = table.Column<long>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Title = table.Column<string>(maxLength: 200, nullable: false),
+                    Author = table.Column<string>(maxLength: 200, nullable: false),
+                    ISBN = table.Column<string>(maxLength: 13, nullable: false),
+                    PublishedDate = table.Column<DateTime>(nullable: false),
+                    IsDeleted = table.Column<bool>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Books", x => x.Id);
+                });
+
             migrationBuilder.InsertData(
                 table: "Categories",
                 columns: new[] { "Id", "IsDeleted", "Name" },
@@ -67,6 +84,9 @@ namespace NetCoreBestPractices.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "Categories");
+
+            migrationBuilder.DropTable(
+                name: "Books");
         }
     }
 }
