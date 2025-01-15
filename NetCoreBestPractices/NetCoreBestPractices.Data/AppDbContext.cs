@@ -15,6 +15,7 @@ namespace NetCoreBestPractices.Data
 
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Car> Cars { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -23,8 +24,16 @@ namespace NetCoreBestPractices.Data
 
             modelBuilder.ApplyConfiguration(new CategorySeed(new int[] { 1, 2 }));
             modelBuilder.ApplyConfiguration(new ProductSeed(new int[] { 1, 2 }));//default datalar uygulanıyor
+
+            modelBuilder.Entity<Car>(entity =>
+            {
+                entity.HasKey(e => e.Id);
+                entity.Property(e => e.Id).UseIdentityColumn();
+                entity.Property(e => e.Make).IsRequired().HasMaxLength(100);
+                entity.Property(e => e.Model).IsRequired().HasMaxLength(100);
+                entity.Property(e => e.Year).IsRequired();
+                entity.Property(e => e.IsDeleted).IsRequired();
+            });
         }
     }
-
-
 }

@@ -1,8 +1,9 @@
-﻿using System;
+using System;
 using AutoMapper;
 using NetCoreBestPractices.API.DTO.Category;
 using NetCoreBestPractices.API.DTO.Person;
 using NetCoreBestPractices.API.DTO.Product;
+using NetCoreBestPractices.API.DTO.Car;
 using NetCoreBestPractices.Core.Documents;
 using NetCoreBestPractices.Core.Entities;
 
@@ -26,6 +27,8 @@ namespace NetCoreBestPractices.API.Mapping
             CreateMap<PersonDto, Person>();
             CreateMap<Person, PersonDto>();
 
+            CreateMap<Car, CarDto>();
+            CreateMap<CarDto, Car>();
         }
     }
 }
