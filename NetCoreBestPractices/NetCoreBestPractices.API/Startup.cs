@@ -66,6 +66,7 @@ namespace NetCoreBestPractices.API
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped(typeof(IMongoRepository<>), typeof(MongoRepository<>));
+            services.AddScoped<ICarService, CarService>();
 
             services.Configure<MongoDbSettings>(Configuration.GetSection("ConnectionStrings:MongoDbSettings"));
             services.AddSingleton<IMongoDbSettings>( serviceProvider => serviceProvider.GetRequiredService<IOptions<MongoDbSettings>>().Value); //Bir üst satırda appsetingsten alınan ayarlar burada inject edildi.

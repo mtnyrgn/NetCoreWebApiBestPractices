@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Microsoft.EntityFrameworkCore;
 using NetCoreBestPractices.Core.Entities;
 using NetCoreBestPractices.Data.Configurations;
@@ -15,16 +15,16 @@ namespace NetCoreBestPractices.Data
 
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Car> Cars { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new ProductConfiguration());
             modelBuilder.ApplyConfiguration(new CategoryConfiguration());
+            modelBuilder.ApplyConfiguration(new CarConfiguration());
 
             modelBuilder.ApplyConfiguration(new CategorySeed(new int[] { 1, 2 }));
             modelBuilder.ApplyConfiguration(new ProductSeed(new int[] { 1, 2 }));//default datalar uygulanıyor
         }
     }
-
-
 }
